@@ -12,3 +12,4 @@ class NetworkingStack(Stack):
         vpc = ec2.Vpc(self, "MyVPC",
             cidr="10.0.0.0/16"
         )
+        
