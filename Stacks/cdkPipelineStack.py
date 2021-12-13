@@ -18,7 +18,7 @@ class cdkPipelineStack(Stack):
             "cdkPipeline",
             synth=pipelines.ShellStep(
                 "Synth",
-                input=pipelines.CodePipelineSource.git_hub("AymanZahran/AWSAutomationWithCDK", "main")
+                input=pipelines.CodePipelineSource.git_hub("AymanZahran/AWSAutomationWithCDK", "main"),
                 commands=[
                     "npm install -g aws-cdk",  # Installs the cdk cli on Codebuild
                     "pip install -r requirements.txt",  # Instructs Codebuild to install required packages
