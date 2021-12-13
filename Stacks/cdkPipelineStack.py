@@ -2,6 +2,7 @@ from aws_cdk import (
     # Duration,
     Stack,
     pipelines as pipelines,
+    aws_secretsmanager as secretsmanager,
 )
 from constructs import Construct
 
